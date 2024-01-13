@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Projekt 2  </title>
+  <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body id="mainBody">
+  <div id="container">
+    <nav>
+      <a href="../home">Home</a>
+      <a href="../projekt1/">Projekt 1</a>
+      <a href="../rapport1/">Rapport 1</a>
+      <a href="../projekt2/">Projekt 2</a>
+      <a href="../rapport2/">Rapport 2</a>
+    </nav>
+    <article>
+      <h1>
+        Projekt 2
+      </h1>
+      <p>
+        Här bygger vi projekt 2
+      </p>
+    </article>
+
+
+    <article>
+      <h2>
+        Uppgift 1, Memory spel
+      </h2>
+      
+      
+
+    <div class="flip-card" id="card0">
+      <div class="flip-card-inner" id="kort0">
+        <div class="flip-card-front">
+          <img src="../gallery/hsback.png" alt="HSback" style="height: 140px; width: 100px">
+        </div>
+        <div class="flip-card-back" id="bak0">
+          <img src="../gallery/spader3.png" style="height: 140px; width: 100px">
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" id="card1">
+      <div class="flip-card-inner" id="kort1">
+        <div class="flip-card-front">
+          <img src="../gallery/hsback.png" alt="HSback" style="height: 140px; width: 100px">
+        </div>
+        <div class="flip-card-back" id="bak1">
+          <img src="../gallery/klover7.png" style="height: 140px; width: 100px">
+        </div>
+      </div>
+    </div>
+    <div class="flip-card" id="card2">
+      <div class="flip-card-inner" id="kort2">
+        <div class="flip-card-front">
+          <img src="../gallery/hsback.png" alt="HSback" style="height: 140px; width: 100px">
+        </div>
+        <div class="flip-card-back" id="bak2">
+          <img src="../gallery/hjarter5.png" style="height: 140px; width: 100px">
+        </div>
+      </div>
+    </div> <br>
+    <div class="flip-card" id="card3">
+      <div class="flip-card-inner" id="kort3">
+        <div class="flip-card-front">
+          <img src="../gallery/hsback.png" alt="HSback" style="height: 140px; width: 100px">
+        </div>
+        <div class="flip-card-back" id="bak3">
+          <img src="../gallery/hjarter5.png" style="height: 140px; width: 100px">
+        </div>
+      </div>
+    </div>
+    <div class="flip-card" id="card4">
+      <div class="flip-card-inner" id="kort4">
+        <div class="flip-card-front">
+          <img src="../gallery/hsback.png" alt="HSback" style="height: 140px; width: 100px">
+        </div>
+        <div class="flip-card-back" id="bak4">
+          <img src="../gallery/klover7.png" style="height: 140px; width: 100px">
+        </div>
+      </div>
+    </div>
+    <div class="flip-card" id="card5">
+      <div class="flip-card-inner" id="kort5">
+        <div class="flip-card-front">
+          <img src="../gallery/hsback.png" alt="HSback" style="height: 140px; width: 100px">
+        </div>
+        <div class="flip-card-back" id="bak5">
+          <img src="../gallery/spader3.png" style="height: 140px; width: 100px">
+        </div>
+      </div>
+    </div>
+
+    
+    </article>
+
+    <article>
+      <h2>
+        Galleri
+      </h2>
+      <p>Inga mer i frames, Obs gå ut ur containern föratt se animation</p>
+      <div id="galleryContainer">
+      <img id="gallery" src="../gallery/kloverkung.png"> <br>
+      <img class="thumb" src="../gallery/spader3.png" >
+      <img class="thumb" src="../gallery/klover7.png" >
+      <img class="thumb" src="../gallery/hjarter5.png">
+      <img class="thumb" src="../gallery/ruter5.png">
+      <img class="thumb" id="tomContainer">
+    </div>
+    </article>
+
+    <article>
+      <h2> Uppgift 3, Tema sliders</h2>
+      <p>Använd sliders nedan för att byta tema på sajten och på artikkeln,
+        <br> använd inmatnings fältet för att byta färg på texten <br>
+      Obs! Formatet för inmatnings fältet är antingen decimal eller hexadecimal<br> <br>
+    Hexadecimal exempel: "#ffffff" <br>
+    Decimal exempel: "255,255,255"</p>
+      <input type="text" id="decInput" placeholder="#ffffff / 255,255,255 " /> 
+      <input class="buttons" type="button" id="temaButton" value="Byt Tema!" /> <br> <br>
+      <input type="range" min="16" max="255" value="128" id="redSlider"> <br>
+      <input type="range" min="16" max="255" value="128" id="greenSlider"> <br>
+      <input type="range" min="16" max="255" value="128" id="blueSlider"> <br>
+      <p> Röd Färg: <span id="redOut"></span></p>
+      <p> Grön Färg: <span id="greenOut"></span></p>
+      <p> Blå Färg: <span id="blueOut"></span></p>
+
+      <p> Binär: <span id="binarOut"></span></p> 
+      <p> Octal: <span id="octaOut"></span></p> 
+      <p> Hexadecimal: <span id="hexaOut"></span></p>  <br>
+      <p> Komplementfärg: <span id="oppHexaOut"></span></p> 
+      <p> Binär (komplementfärg): <span id="binarOppOut"></span></p> 
+      <p> Octal (komplementfärg): <span id="octaOppOut"></span></p>
+ <br>
+
+    </article>
+
+    <article>
+      <h2> Uppgift 4, JQuery och GASP</h2>
+      <p> Vi kan utöka JS funktionalitet med hjälp av bibliotek</p>
+
+      <input class="buttons" type="button" id="visaGomma" value="Visa/göm" /> <br> <br>
+      <div id="vG">Mig kan du visa och gömma!</div> <br> <br>
+
+      <input class="buttons" type="button" id="fadeBut" value="FadeOut/In" /> <br> <br>
+      <div id="fade">Mig kan du fadea!</div><br> <br>
+
+      <input class="buttons" type="button" id="slideBut" value="SlideOut/In" /> <br> <br>
+      <div id="slide">Mig <br> Kan <br> Du <br> Slidea <br> In <br> Och <br> Ut</div>
+
+    </article>
+
+    <article>
+      <h2> Uppgift 5, Användarhatnering</h2>
+      <p> Logga in föratt se hemligheter OBS ifall bug pröva Firefox och vice versa <br> (tips använd zinned för att se hemlis)</p>
+      <input class="buttons" type="button" id="login" value="Logga In" />
+      <span id="hemlis"> <br> <br> Hemlisen är: Dennis alter ego Denniz gjorde nångong än webbsida som hette Zinned, Denniz åt fel håll</span> <br> <br>
+      <span id="cookieOut"></span>
+
+    </article>
+
+    <article>
+      <h2> Uppgift 6, AJAX</h2>
+      <p> </p>
+      <input class="buttons" type="button" id="laddaDataKungar" value="Hämta Kungar" /><br> <br>
+      <div id="ajaxKungar"></div> <br> <br>
+
+      <input class="buttons" type="button" id="laddaDataQueens" value="Hämta Drottningar" /><br> <br>
+      <div id="ajaxDrottningar"></div> <br> <br>
+
+      <input class="buttons" type="button" id="laddaDataJatka" value="Hämta Knäktar" /><br> <br>
+      <div id="ajaxJatka"></div> <br> <br>
+
+      <input class="buttons" type="button" id="laddaDataS" value="Hämta ACE OF SPADES och kaverin" /><br> <br>
+      <div id="ajaxS"></div> <br> <br>
+
+      <input class="buttons" type="button" id="laddaDataRest" value="Hämta resten" /><br> <br>
+      <div id="ajaxRest"></div> <br> <br>
+
+      <input class="buttons" type="button" id="laddaDataJoker" value="Hämta JOKER med jQuery" /><br> <br>
+      <div id="ajaxJoker"></div> <br> <br>
+
+      <input class="buttons" type="button" id="laddaDataWikipedia" value="Hämta länk till wikipedia för spelkort" /><br> <br>
+      <div id="ajaxWikipedia"></div> <br> <br>
+
+    </article>
+
+    <article>
+      <h2> Uppgift 7, JSON</h2>
+      <p> Här kommer JSON + AJAX </p>
+
+      <input class="buttons" type="button" id="jsonLadda" value="Hämta JSON" /><br>
+      <p>Här kommer JSON data från ip-api OBS! FUNKKAR ÄNDAST PÅ HTTP://</p>
+      <div id="jsonCountry"></div> <br>
+      <div id="jsonCountryCode"></div> <br>
+      <div id="jsonTimeZone"></div> <br>
+
+      <input class="buttons" type="button" id="jsonLaddaVader" value="Hämta Väder data med JSON" /><br>
+      <p>Här kommer JSON Väder data OBS DU BOR I HESA</p>
+      <div id="jsonCoordLon"></div> <br>
+      <div id="jsonCoordLat"></div> <br>
+      <div id="jsonVader"></div> <br>
+      <div id="jsonTryck"></div> <br>
+      <div id="jsonFukt"></div> <br>
+
+
+
+      <div id="openweathermap-widget-11"></div>
+
+    </article>
+
+    <article>
+      <h2> Uppgift 8, Charts</h2>
+      <h4>Här är Google Charts</h4>
+      <div id="chart_div"></div>
+      <div id="chart_gauge"></div>
+      <div id="donutchart"></div>
+      <h4>Här är HighCharts</h4>
+      <div id="containerHighchart" style="width:100%; height:600px;"></div>
+      <h4>Här är ChartJS</h4>
+      <canvas id="myChart"></canvas>
+    </article>
+  </div>
+</body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+<script src="../projekt2/script.js"></script>
+<script src='//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/d3.min.js'></script>
+
+</html>

@@ -1,0 +1,39 @@
+<img class="ajaxkort" src="../gallery/hjarter2.png">
+<img class="ajaxkort" src="../gallery/hjarter3.png">
+<img class="ajaxkort" src="../gallery/hjarter4.png">
+<img class="ajaxkort" src="../gallery/hjarter5.png">
+<img class="ajaxkort" src="../gallery/hjarter6.png">
+<img class="ajaxkort" src="../gallery/hjarter7.png">
+<img class="ajaxkort" src="../gallery/hjarter8.png">
+<img class="ajaxkort" src="../gallery/hjarter9.png">
+<img class="ajaxkort" src="../gallery/hjarter10.png"> <br>
+
+<img class="ajaxkort" src="../gallery/spader2.png">
+<img class="ajaxkort" src="../gallery/spader3.png">
+<img class="ajaxkort" src="../gallery/spader4.png">
+<img class="ajaxkort" src="../gallery/spader5.png">
+<img class="ajaxkort" src="../gallery/spader6.png">
+<img class="ajaxkort" src="../gallery/spader7.png">
+<img class="ajaxkort" src="../gallery/spader8.png">
+<img class="ajaxkort" src="../gallery/spader9.png">
+<img class="ajaxkort" src="../gallery/spader10.png"> <br>
+
+<img class="ajaxkort" src="../gallery/klover2.png">
+<img class="ajaxkort" src="../gallery/klover3.png">
+<img class="ajaxkort" src="../gallery/klover4.png">
+<img class="ajaxkort" src="../gallery/klover5.png">
+<img class="ajaxkort" src="../gallery/klover6.png">
+<img class="ajaxkort" src="../gallery/klover7.png">
+<img class="ajaxkort" src="../gallery/klover8.png">
+<img class="ajaxkort" src="../gallery/klover9.png">
+<img class="ajaxkort" src="../gallery/klover10.png"> <br>
+
+<img class="ajaxkort" src="../gallery/ruter2.png">
+<img class="ajaxkort" src="../gallery/ruter3.png">
+<img class="ajaxkort" src="../gallery/ruter4.png">
+<img class="ajaxkort" src="../gallery/ruter5.png">
+<img class="ajaxkort" src="../gallery/ruter6.png">
+<img class="ajaxkort" src="../gallery/ruter7.png">
+<img class="ajaxkort" src="../gallery/ruter8.png">
+<img class="ajaxkort" src="../gallery/ruter9.png">
+<img class="ajaxkort" src="../gallery/ruter10.png">

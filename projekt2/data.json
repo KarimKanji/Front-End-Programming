@@ -1,0 +1,6 @@
+{
+    "posts": [
+        {"user":"Dennis", "text":"I like cats"},
+        {"user":"Skurk", "text":"I don't like cats" }
+    ]
+}

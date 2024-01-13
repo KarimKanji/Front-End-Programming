@@ -1,0 +1,4 @@
+<img class="ajaxkort" src="../gallery/hjarterjatka.png">
+<img class="ajaxkort" src="../gallery/spaderjatka.png">
+<img class="ajaxkort" src="../gallery/kloverjatka.png">
+<img class="ajaxkort" src="../gallery/ruterjatka.png">

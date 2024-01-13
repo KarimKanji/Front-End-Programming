@@ -1,0 +1,4 @@
+<img class="ajaxkort" src="../gallery/hjarterkung.png">
+<img class="ajaxkort" src="../gallery/spaderkung.png">
+<img class="ajaxkort" src="../gallery/kloverkung.png">
+<img class="ajaxkort" src="../gallery/ruterkung.png">

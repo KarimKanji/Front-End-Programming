@@ -1,0 +1,4 @@
+<img class="ajaxkort" src="../gallery/hjarterqueen.png">
+<img class="ajaxkort" src="../gallery/spaderqueen.png">
+<img class="ajaxkort" src="../gallery/kloverqueen.png">
+<img class="ajaxkort" src="../gallery/ruterqueen.png">

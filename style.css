@@ -1,0 +1,290 @@
+/*html, body {
+    margin: 0;
+    height: 100%;
+    background-color:rgb(126, 126, 126);
+    z-index: 1;
+    position: relative;
+}
+*/
+#container {
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(10, 10, 10);
+    max-width: 1000px;
+    min-height: 100%;
+    margin: auto;
+    z-index: 1;
+    position: relative;
+    color: rgb(2, 252, 85);
+}
+nav {
+    background-color: rgb(41, 104, 74);
+    padding: 15px;
+    z-index: 1;
+    position: relative;
+}
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-left: 5px;
+}
+nav a:hover {
+    background-color: rgb(75, 60, 158);
+}
+
+#timerSquare {
+    background-color: rgb(41, 104, 74);
+    color: black;
+    z-index: 1;
+    position: relative;
+}
+
+#formInfo {
+    font-size: 30px;
+
+}
+#output {
+    font-size: 20px;
+}
+
+article{
+    padding-left: 10px;
+}
+
+
+
+#circle {
+	
+	
+top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  
+  position:absolute;
+   background: radial-gradient(#0B853D 3px, transparent 5px, #000 7px, transparent 9px, #0B853D 11px, transparent 13px,  15px, transparent 17px, #000 19px, transparent 21px, #0B853D 23px, transparent 25px, #fff 27px, transparent 29px, #000 31px, transparent 33px);
+  background-size: 30px 30px;
+}
+.a {
+   -webkit-animation: adjustHue 1s alternate infinite;
+}
+     
+@-webkit-keyframes adjustHue {
+   0% { -webkit-filter: hue-rotate(30deg); }
+   50% { -webkit-filter: hue-rotate(60deg); }
+   100% { -webkit-filter: hue-rotate(90deg); }   
+}
+@-webkit-keyframes loading {
+  to { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes loading {
+	to { -moz-transform: rotate(360deg); }
+}
+@-ms-keyframes loading {
+	to { -ms-transform: rotate(360deg); }
+}
+@keyframes loading {
+	to { transform: rotate(360deg); }
+}
+#circle { 
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 3s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    animation-name: blinker;
+    animation-duration: 3s;
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite; color: red; 
+} 
+
+@-moz-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1.0; } 
+}
+
+@-webkit-keyframes blinker { 
+    0% { opacity: 1.0; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1.0; } 
+} 
+
+@keyframes blinker { 
+    0% { opacity: 1.0; } 
+    50% { opacity: 0.3; } 
+    100% { opacity: 1.0; } 
+}
+.a{
+   background: radial-gradient(#0B853D 3px, transparent 5px, #000 7px, transparent 9px, #0B853D 11px, transparent 13px,  15px, transparent 17px, #000 19px, transparent 21px, #0B853D 23px, transparent 25px, #fff 27px, transparent 29px, #000 31px, transparent 33px);
+  background-color:#000;
+  background-size: 32px 32px;
+  margin:-10px;
+}
+
+body{
+ 
+  background:#000;
+ transform-style: preserve-3d;
+ 
+  @include perspective(1000px);
+}
+
+#card1 {
+    color: #01ff40;
+}
+.kort {
+    
+    width: 100px;
+    height: 140px;
+    background-color: rgb(38, 142, 202);
+    display: inline-block;
+}
+.kort:hover {
+ 
+    border: 3px solid #01ff40;
+}
+
+/*.memoryKort {
+    height: 140px;
+    
+    
+}*/
+#galleryContainer {
+    border: 3px solid #01ff40;
+}
+#galleryContainer:hover #gallery{
+    
+    animation: fade 2s linear forwards;
+}
+/*.thumb:hover #gallery {
+    animation: fade 2s linear forwards;
+}*/
+
+@keyframes fade {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+/*.thumb:hover {
+    
+    height: 150px;
+
+}*/
+
+.thumb {
+    height: 100px;
+    
+}
+#gallery {
+    height: 180px;
+}
+
+
+
+#chart_gauge {
+   display: inline-block;
+   padding-bottom: 120px;
+   width: 400px; 
+   height: 120px;
+}
+#chart_div {
+    display: inline-block;
+    
+ }
+
+#donutchart {
+    display: inline-block;
+    width: 900px;
+    height: 500px;
+}
+
+#hemlis {
+    display: none;
+}
+
+/*HÄR BÖRJAR UPPG 1 CSS*/
+
+.flip-card:hover {
+    border: 3px solid #01ff40;
+}
+
+.flip-card {
+    display: inline-block;
+    background-color: transparent;
+    width: 100px;
+    height: 140px;
+    perspective: 1000px;
+}
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: 1.3s; /*transform före 1.3s*/
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card .flip-card-inner.flip-card {
+    transform: rotateY(180deg);
+  }
+
+  /*.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}*/
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+  }
+  .flip-card-front {
+    color: black;
+    transform: rotateY(0deg);
+  }
+  .flip-card-back {
+    transform: rotateY(180deg);
+    width: 100px;
+    height: 140px;
+  }
+
+/* HÄR SLUTAR UPPG 1 CSS */
+
+
+.ajaxkort{
+    height: 100px;
+}
+
+#aceofspades {
+height: 200px;
+}
+#aceofspades:hover {
+    transition: transform 2.8s;
+    transform: rotateZ(180deg);
+}
+
+#joker {
+    height: 600px;
+    border: 3px solid #01ff40;
+}
+
+
+#openweathermap-widget-11 {
+margin: auto;
+display: inline-block;
+}
+
+.buttons {
+    background-color: #01ff40;
+  border: none;
+  color: black;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}

@@ -1,0 +1,5 @@
+<img class="ajaxkort" src="../gallery/hjarters.png">
+<img class="ajaxkort" src="../gallery/spaders.png">
+<img id="aceofspades" src="../gallery/klovers.png">
+<img class="ajaxkort" src="../gallery/ruters.png"> <br>
+(Hover on Ace of spades)

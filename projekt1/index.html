@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NOT A SCAM-SITE</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+        
+        <div class="a"></div><div id="circle"></div>
+    <div id="container">
+            
+           
+        <nav>
+            <a href="../home">Home</a>
+            <a href="../projekt1/">Projekt 1</a>
+            <a href="../rapport1/">Rapport 1</a>
+            <a href="../projekt2/">Projekt 2</a>
+            <a href="../rapport2/">Rapport 2</a>
+        </nav>
+        <article>
+            <h1>
+                Projekt 1
+            </h1>
+
+            <form name="loanapp">
+                Förnamn: <br> <input type="text" name="firstname" onkeyup="hanteraStrang(event)" /> <br>
+                Efternamn: <br> <input type="text" name="lastname" onkeyup="hanteraStrang(event)" /> <br>
+                <br>
+                Lånebelopp: <br> <input type="text" name="loan" onkeyup="hanteraSiffra(event), hanteraLan(event)" />
+                <br>
+                Ränta (decimal): <br> <input type="text" name="ranta" onkeyup="hanteraLan(event)" /> <br>
+                Lånetid (år): <br> <input type="text" name="lanetid" onkeyup="hanteraLan(event)" /> <br>
+                <br>
+                Tid att betala räkning <br> (dygn, datumet flyttas ifall <br> det innefaller på en helgdag): <br> <input type="text" name="forfallodag" onkeyup="datum(event)" /> <br>
+                <br>
+                Referensnummer (6st numror): <br> <input type="text" name="referens" onkeyup="referensnr(event)" /> <br>
+            </form>
+            <input id="ansok" type="button" value="Ansök!" onclick="hanteraAnsokan()" />
+            <input id="spelaSPS" type="button" value="Spela SPS!" onclick="spela()" />
+            <br>
+            <br>
+            <div id="output">
+                <div id="formInfo"></div>
+                <div id="namnOut"></div>
+                <div id="loanOut"></div>
+                <div id="rantaOut"></div>
+                <div id="laneTidOut"></div>
+                <div id="annuitetOut"></div>
+                <div id="slutKostOut"></div>
+                <div id="forfalloOut"></div>
+                <div id="referensOut"></div>
+            </div>
+            <div id="spsOut">
+                    <div id="spelare1Out"></div>
+                    <div id="spelare2Out"></div>
+                    <div id="spelare3Out"></div>
+                    <div id="spelare4Out"></div>
+                    <div id="spelare5Out"></div>
+                    <div id="spelare6Out"></div> 
+            </div>
+            <br>
+            <br><br>
+            <br>
+            <div id="timerSquare">
+                <p> Klicka innanför den gröna rutan för att startta timer, högerklick pausar timern,
+                     <br>mitten musknapp gör en lap
+                </p>
+              
+                 <br> <br>
+                <input type="text" id="txt">
+                <br>
+                <div id="lapOut"></div>
+                <br>
+                <br>
+                <br>
+            </div>
+            <br>
+            <div>
+                Skulle kanske löna sig att skaffa VPN... Tryck på knappen
+                föratt se hur lätt det är att få information om DIG!
+            </div>
+            <br>
+            <button onclick="getLocation(), getBrowser()
+            , getWindow(), getSpam()">PRESS ME (NO SCAM)</button>
+            <br>
+            <br>
+            <div id="ipOut"></div>
+            <br>
+            <div id="locationOut"></div>
+            <br>
+            <div id="browserOut"></div>
+            <div id="sprakOut"></div>
+            <br>
+            <div id="windowOut"></div>
+            <div id="resOut"></div>
+        </article>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+</body>
+
+<script src="script.js"></script>
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+
+</html>

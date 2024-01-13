@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>home</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div id="container">
+        <nav>
+            <a id="logo" href="../home">Home</a>
+            <a href="../projekt1/">Projekt 1</a>
+            <a href="../rapport1/">Rapport 1</a>
+            <a href="../projekt2/">Projekt 2</a>
+            <a href="../rapport2/">Rapport 2</a>
+        </nav>
+
+        <article>
+            <h1>Projekt 1, Rapport</h1>
+            <br>
+            <h3>1. Stränghantering</h3>
+            <p>
+            Uppgift 1 bestod till största delen av att hantera olika variabler
+            och sedan plussa ihop dom föratt få önskat resultat. Nya saker jag lärde
+            mig var Slice och addEventListener funktionerna. Genast när man började
+            använda EventListener själv började man förstå hur den fungerar och 
+            jag kunde imlementera det för resten av fälten så att de uppdaterar
+            då man skriver. Uppgiften var dock relativt lätt att förstå bara
+            man fattade logiken bakom att ta första bokstaven -> ändra den till 
+            stor bokstav -> ta bort första bokstaven -> addera den stora bokstaven etc.
+            </p>
+            <h3>2. Sifferhantering</h3>
+            <p>
+            Uppgift 2 tog en lång tid att göra men det var till största delen att
+            förstå hur replace funktionen fungerar. Men med hjälp av google
+            förstod jag hur jag kunde hantera siffran på rätt sätt. Den andra svåra delen
+            av uppgiften var att avrunda siffran neråt till närmaste 5 cent. Det skulle
+            ha varit lätt att ändast avrunda. Men jag visste att jag måste använda Math.floor
+            föratt avrunda neråt men visste int hur jag skulle få avrundningen att ske ändast 
+            för decimalerna. Med lite lätande på google hittade jag att man måst dividera
+            avrundade talet med x och sedan multiplicera med x = (tal /x) * x. OBS!
+            En väldigt intressant sak med lånebeloppet är att om man har ett värde på
+            .60 avrundas talet ner till 0.55, det vore logiskt om det skulle hända till alla tal så, 
+            men det konstiga är att det händer ändast om värdet är .60. På följande vis: <br>
+            .90 -> .90 <br>
+            .80 -> .80 <br>
+            .70 -> .70 <br>
+            .60 -> .55 !?!? <br>
+            .50 -> .50 <br>
+            .40 -> .40 <br>
+            .30 -> .30 <br>
+            .20 -> .20 <br>
+            .10 -> .10 <br>
+            Jag tolkade uppgiften så att om värdet är jämt skall det inte avrundas, men om decimalen inte är
+            jämn skall den avrundas NERÅT till närmaste 5 cent alltså 0.05. Jag fick detta att fungera men varför 
+            avrundas då .60 till .55 vet du??
+            </p>
+            <h3>3. Lånekalkylator</h3>
+            <p>
+            Lånekalkylatorn var väldigt simpel att göra bara man hittade formeln. Då man 
+            hade formeln var det ändast att få in värdena från formuläret som variabler
+            och sedan räkna ut annuiteten. Jag hade lite strul med att få exponenterna att
+            fungera men fick det fixat med Math.pow. Wikipedia för annuitets lån hjälpte
+            med formeln och w3schools hjälpte med funktionerna men annors var det relativt lätt
+            att få kalkylatorn att fungera.
+            </p>
+            <h3>4. Datumhantering</h3>
+            <p>
+            Uppgiften var svår föratt det var krävande att förstå hur datum fungerar i javascript.
+            Jag använde mig av w3schools föratt få alla funktioner som man behöver föratt kunna lösa
+            uppgiften. Jag strulade länge med att addera värdet från formuläret till datumet. Jag
+            märkte dock efter många timmar att jag försökte addera en sträng till datumet vilket såklart
+            inte fungerar, det problemet fick jag fixat med parseInt. Förutom att det tog länge att forska
+            hur datum och datum funktioner fungerar i javascript så var ändo uppgiften väldigt logisk. 
+            Personligen var det lätt att göra if och else if statements för lördagar och söndagar.
+            Jag är nöjd med uppgiften och det känns som att uppgiften gav mig bättre förståelse över hur
+            datum fungerar i javascript.
+            </p>
+            <h3>5. Referensnummer</h3>
+            <p>
+            Referensnumret var en väldigt självklar uppgift om man gjorde enligt Finsk standard.
+            Uppgiften bestod till största delen av variabler vars värden man måste få in från formuläret.
+            När man väl hade värden var det lätt att göra en formel och sedan räkna ut checksum. 
+            Det ända man måste vara noga med i uppgiften är att se till att man tar skillnaden mellan
+             det avrundade värdet och det summerade värdet och inte resultatet. Annors händer 
+            de lätt så att man har -1, -2 etc. som checksum, vilket såklart inte duger. Föratt lösa detta
+            använde jag mig av Math.abs.
+            </p>
+            <h3>6. Användardata</h3>
+            <p>
+            Gömma fälten: Det var relativt lätt att få fråge formuläret gömt. Med lite hjälp av google
+            fick jag hela fältet att gömma sig med 3 rader kod inom en funktion. Funktionen körs då 
+            man trykcer på Ansök knappen. <br> 
+            Del 1:<br> För att få browser och platform infon kunde man använda sig av navigator.appVersion. 
+            Sedan var det lätt att printa informationen till skärmen. W3schools hjälpte med funktionen.
+            <br>
+            Del 2:<br> För att få infon av både resolutionen och fönsterstorleken måste man använda sig av
+            window.innerwidth/height eller window.outerwidth/height för fönsterstorleken och screen.availwidth/height för resolutionen.
+            För fönsterstorleken beslöt jag mig att använda innerWidth och innerHeight. Dessa fick man från w3schools, och efter det 
+            var det lätt att printa resulatet till webbsidan. 
+            <br>
+            Del 3:<br> W3schools hade färdigt en getLocation funktion och den använde sig av navigator.geolocation. 
+            Med lite joinksande och editerande fick jag den att producera önskat resultat på önskad plats. OBS!
+            På chrome 5.0 fungerar det ändast om webbsidan är secure (https://), annors fungerar getLocation ej.
+            <br>
+            Del 4:<br> Denna uppgift gick bra att göra då man följde med på timmen och gjorde efter. Lite svårt var det först
+            att förstå hur funktionen fungerar och det som vi gick egenom på timmen var nytt för mig. 
+            </p>
+            <h3>7. Arrays, Slumpmässighet och sortering</h3>
+            <p>
+            Arrays och slumpmässighet var bekant från tidigare eftersom vi gick egenom det på kursen i matematisk programmering.
+            Uppgiften består av mycket kod men logiken bakom uppgiften är lätt. Det hjälpte mycket att logiken och koden är
+            samma för varje spelare och ändast spelar nummret skiljer dem åt. Jag ville skapa en array med många namn så att 
+            det skulle bli väldigt osannolikt för en spelare att ha samma namn som en annan. Då alla spelare hade sina namn
+            var det bara att get till dem en random hand. Om man kan hantera arrays och Math.random() var uppgiften relativt lätt 
+            och inte väldigt tidskrävande. 
+            </p>
+            <h3>8. Sten Sax Påse</h3>
+            <p>
+            Personligen har det för mig alltid varit sten, papper, sax och gjorde spelets händer efter det. 
+            Jag valde att göra spelet med if och else if satser eftersom det var ändast att göra en if sats sedan 
+            copy-pastea den för varje alternativ eller möjlighet och ändra värdena så att det täckte alla möjligheter.
+            Logiken bakom ett så lätt spel var relativt lätt att omvandla till kod form, och jag tycker att resultaten är pålitliga och
+            jag tycker att spelet som helhet verkar trovärdigt.  
+            </p>
+            <h3>9. Tidtagarur </h3>
+            <p>
+            Tidtagaruret eller shodor ersättaren var lätt den svåraste uppgiften. Det som vi gick egenom på timmen hjälpte mycket 
+            men föratt få mer poäng krävs det väldigt mycket. Med lite google fick jag tidtagaruret och fungera med vänster och 
+            högerklick. Resten av uppgiften var väldigt krävande och det fick jagg inte gjort. Men trots det lärde jag mig mycket från uppgiften 
+            t.ex. addEventListener funktionen och hur den fungerar och ideen bakom att läsa in en händelse skapad av användaren.
+            </p>
+        </article>
+    </div>
+</body>
+
+<script src="spel.js"></script>
+
+</html>

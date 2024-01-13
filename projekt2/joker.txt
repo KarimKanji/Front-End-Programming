@@ -1,0 +1,1 @@
+<img id="joker" src="../gallery/joker.jpg">
